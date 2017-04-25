@@ -1,6 +1,6 @@
 # npmtest-ember-cli-toggle
 
-#### basic test coverage for  ember-cli-toggle (v3.0.0)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-cli-toggle.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-cli-toggle) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-cli-toggle.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-cli-toggle)
+#### basic test coverage for  [ember-cli-toggle (v3.0.0)](https://github.com/knownasilya/ember-cli-toggle#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-ember-cli-toggle.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-ember-cli-toggle) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-ember-cli-toggle.svg)](https://travis-ci.org/npmtest/node-npmtest-ember-cli-toggle)
 
 #### Checkbox based toggle switch component for Ember.js
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-ember-cli-toggle/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-ember-cli-toggle/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-ember-cli-toggle/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-ember-cli-toggle/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ember-cli-toggle/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ember-cli-toggle/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-ember-cli-toggle/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-ember-cli-toggle/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-ember-cli-toggle/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-ember-cli-toggle/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-ember-cli-toggle/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-ember-cli-toggle/build/coverage.html/index.html)
 
@@ -35,24 +35,19 @@
 ```json
 
 {
-    "name": "ember-cli-toggle",
-    "version": "3.0.0",
+    "author": {
+        "name": "Ilya Radchenko"
+    },
+    "bugs": {
+        "url": "https://github.com/knownasilya/ember-cli-toggle/issues"
+    },
+    "dependencies": {
+        "ember-cli-babel": "^5.1.7",
+        "ember-cli-htmlbars": "^1.1.1",
+        "ember-runtime-enumerable-includes-polyfill": "^1.0.1"
+    },
+    "deprecated": "This addon has been renamed to 'ember-toggle', please use the new addon, as updates will not be published to the old addon",
     "description": "Checkbox based toggle switch component for Ember.js",
-    "directories": {
-        "doc": "doc",
-        "test": "tests"
-    },
-    "scripts": {
-        "start": "ember server",
-        "build": "ember build",
-        "test": "ember try:each"
-    },
-    "repository": "https://github.com/knownasilya/ember-cli-toggle",
-    "engines": {
-        "node": ">= 0.12.0"
-    },
-    "author": "Ilya Radchenko",
-    "license": "MIT",
     "devDependencies": {
         "broccoli-asset-rev": "^2.4.5",
         "ember-ajax": "^2.4.1",
@@ -77,6 +72,23 @@
         "ember-source": "^2.11.0",
         "loader.js": "^4.0.10"
     },
+    "directories": {
+        "doc": "doc",
+        "test": "tests"
+    },
+    "dist": {
+        "shasum": "f843f563df034cdf25ffa5156082da836f325f8e",
+        "tarball": "https://registry.npmjs.org/ember-cli-toggle/-/ember-cli-toggle-3.0.0.tgz"
+    },
+    "ember-addon": {
+        "configPath": "tests/dummy/config",
+        "demoURL": "http://knownasilya.github.io/ember-cli-toggle/"
+    },
+    "engines": {
+        "node": ">= 0.12.0"
+    },
+    "gitHead": "ab641fc821d8f812ef8dc920d28eb7a43adf52b3",
+    "homepage": "https://github.com/knownasilya/ember-cli-toggle#readme",
     "keywords": [
         "ember-addon",
         "toggle",
@@ -84,15 +96,25 @@
         "component",
         "ember"
     ],
-    "dependencies": {
-        "ember-cli-babel": "^5.1.7",
-        "ember-cli-htmlbars": "^1.1.1",
-        "ember-runtime-enumerable-includes-polyfill": "^1.0.1"
+    "license": "MIT",
+    "maintainers": [
+        {
+            "name": "knownasilya"
+        }
+    ],
+    "name": "ember-cli-toggle",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/knownasilya/ember-cli-toggle.git"
     },
-    "ember-addon": {
-        "configPath": "tests/dummy/config",
-        "demoURL": "http://knownasilya.github.io/ember-cli-toggle/"
-    }
+    "scripts": {
+        "build": "ember build",
+        "start": "ember server",
+        "test": "ember try:each"
+    },
+    "version": "3.0.0",
+    "bin": {}
 }
 ```
 
